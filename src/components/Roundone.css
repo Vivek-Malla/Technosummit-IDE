@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Inter", sans-serif;
+}
+
+.app {
+  width: 400px;
+  margin: 0 80px;
+  height: 100vh;
+}
+
+/* Contact.js */
+.form {
+  padding-top: 40px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form > h1 {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.form > input,
+textarea {
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  background: #fff;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  outline: none;
+}
+
+.form > input:focus,
+textarea:focus {
+  border: 1px solid rgb(0, 0, 196);
+}
+
+.form > textarea {
+  height: 350px;
+  min-width: 900px;
+}
+
+.form > label {
+  padding-bottom: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.form > button {
+  padding: 10px;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.question{
+    color: aliceblue;
+    margin: 0 80px;
+    padding-top: 40px;
+}
+.question p{
+    font-size: 15px;
+}
+
+.form > button:hover {
+  background-color: rgb(0, 0, 196);
+}
+
+
+.animate1
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 30px;
+}
+
+#blurmain{
+    color: transparent;
+    text-shadow: 0 0 10px black;
+    user-select: none;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
